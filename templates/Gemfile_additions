@@ -1,42 +1,40 @@
-gem "seo_helper", "~> 1.0"
-gem "open_graph_helper"
-
 gem "rmagick"
-gem "carrierwave"
-gem "carrierwave-meta"
+gem 'paperclip'
 
-gem "settingslogic"
+# form helpers
+gem 'nested_form'
 
-gem "anjlab-bootstrap-rails", ">= 2.2.2", :require => "bootstrap-rails"
-gem "bootstrap_helper", ">= 2.1.2.1"
 gem "simple_form", "2.0.3"
-gem "will_paginate", "3.0.3"
-
-gem "high_voltage"
-
-gem "airbrake"
-gem "turbo-sprockets-rails3"
-
-gem "rvm-capistrano"
-
-
-# Cache
-gem "dalli"
+gem 'country_select'
+gem 'kaminari'
+gem 'bootstrap-kaminari-views'
 
 group :assets do
-  gem "compass-rails"
+  gem 'sass-rails',   '~> 3.2.3'
+  gem 'coffee-rails'
+  gem 'compass-rails'
+  gem 'compass-h5bp'
+  gem 'uglifier', '>= 1.0.3'
+  gem 'jquery-rails'
 end
 
+gem "therubyracer"
+gem "less-rails"
+gem "twitter-bootstrap-rails"
+gem 'html5-rails'
+
 group :development do
-  gem "capistrano"
-  gem "capistrano-ext"
-  gem "cape"
-  gem "binding_of_caller"
-  gem "better_errors"
-  gem "magic_encoding"
-  gem "annotate"
-  gem "powder"
-  gem "pry-nav"
-  gem "pry-remote"
+  gem 'mocha'
+  gem 'rspec-rails',       '~> 2.12'
+  
+  # Deploy with Capistrano
+  gem 'capistrano'
+  gem 'rvm-capistrano'
+  # test data
+
+  gem 'factory_girl_rails'
+
+  # test coverage
+  gem 'simplecov', :require => false
 end
 
